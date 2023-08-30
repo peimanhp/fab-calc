@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="./assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form class="container mt-5 d-flex flex-column">
+      <label for="width">طول</label>
+      <input id="width" type="number" />
+      <label for="height">عرض</label>
+      <input id="height" type="number" />
+      <label for="numbers">تعداد نخ</label>
+      <input id="numbers" type="number" />
+      <label for="density">تراکم</label>
+      <input id="density" type="number" />
+      <div class="form-check ms-auto">
+        <input class="form-check-input" type="checkbox" value="" id="cut" />
+        <label class="form-check-label" for="cut"> برش </label>
+      </div>
+      <div class="form-check ms-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="laser_cut"
+        />
+        <label class="form-check-label" for="laser_cut"> برش لیزر </label>
+      </div>
+      <div class="form-check ms-auto">
+        <input class="form-check-input" type="checkbox" value="" id="shiny" />
+        <label class="form-check-label" for="shiny"> براق </label>
+      </div>
+      <div class="input-group mb-5" dir="rtl">
+        <span class="input-group-text rounded" dir="rtl" id="result">نتیجه</span>
+        <input type="text" class="form-control rounded bg-light" dir="rtl" aria-label="result" aria-describedby="result" disabled>
+      </div>
+      <label for="Coefficient1">ضریب یک</label>
+      <input id="Coefficient1" type="number" />
+      <label for="Coefficient2">ضریب دو</label>
+      <input id="Coefficient2" type="number" />
+      <label for="cut_price">هزینه برش</label>
+      <input id="cut_price" type="number" />
+      <label for="shine_price">هزینه براق</label>
+      <input id="shine_price" type="number" />
+      <label for="laser_cut_price">هزینه برش لیزری</label>
+      <input id="laser_cut_price" type="number" />      
+    </form>
+    <script src="./assets/js/main.js"></script>
+    <script
+      src="./assets/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
